@@ -1,0 +1,11 @@
+@media screen and (min-width: 480px) {
+    .container {
+      max-width: 426px;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 1px solid red;
+    }
+
+
+    
+  }

@@ -1,0 +1,19 @@
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1158px;
+
+
+      outline: 1px solid green;
+
+    }  
+    /* -----Hero----- */
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+} 
