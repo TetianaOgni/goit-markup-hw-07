@@ -9,3 +9,10 @@
 
     
   }
+
+  @media screen and (max-width: 767px) {
+    .hero-title {
+        text-transform: capitalize;
+    }
+    
+  }
