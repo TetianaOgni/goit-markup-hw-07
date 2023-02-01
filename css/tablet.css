@@ -123,4 +123,44 @@
     min-height: 586px;
     padding: 72px 24px 24px 24px;
   }
+
+   /* -----Strategy-----*/
+    
+  .strategy-list,
+  .card-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  } 
+  
+  .strategy-item {
+    width: calc((100% - 72px) / 2);
+  }
+  .strategy-subtitle {
+    text-align: left;
+  }
+  
+  /* -----Team----- */
+
+  .team {
+    padding-bottom: 128px;
 }
+
+  @media screen and (max-width: 1199px) {
+    .team>.container {
+      padding-left: 93px;
+      padding-right: 93px;
+     }
+  }
+  
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 64px) / 2);
+   
+  }
+
+   
+} 
