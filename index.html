@@ -24,13 +24,11 @@
 
   <body>
     <!-----Header----->
-    <!-- <header class="header">
+     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="" class="header-logo link logo">
-            <span class="primary">Web</span>
-            Studio
-          </a>
+            <span class="primary">Web</span>Studio</a>
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-link link current">Studio</a>
@@ -43,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" data-menu-open>
          <svg class="mobile-menu-open-icon" width="32" height="22">
           <use href="./images/icons.svg#icon-burger"></use>
          </svg>
@@ -63,76 +61,78 @@
         </ul>
       </div>
 
-      <div class="mobile-menu">
-        <button type="button" class="mobile-menu-close-btn">
-          <svg class="mobile-menu-close-icon" width="8" height="8">
-           <use href="./images/icons.svg#close-btn-modal"></use>
-          </svg>
-         </button>
-
-         <ul class="menu-header-list list">
-          <li class="menu-header-item">
-            <a href="./index.html" class="menu-header-link link current">Studio</a>
-          </li>
-          <li class="menu-header-item">
-            <a href="./portfolio.html" class="menu-header-link link">Portfolio</a>
-          </li>
-          <li class="menu-header-item">
-            <a href="./contacts" class="menu-header-link link">Contacts</a>
-          </li>
-        </ul>
-
-        <ul class="menu-header-info-list list">
-          <li class="menu-info-item">
-            <a href="mailto:info@devstudio.com" class="menu-header-info link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="menu-info-item">
-            <a href="tel:+110001111111" class="menu-header-info link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-
-        <ul class="menu-header-icon-list list">
-          <li class="menu-header-icon-item">
-            <a href="" class="menu-header-icon-link">
-              <svg class="menu-header-icon-svg" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram"></use>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mobile-menu-top">
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+               <use href="./images/icons.svg#close-btn-modal"></use>
               </svg>
-            </a>
-          </li>
-          <li class="menu-header-icon-item">
-            <a href="" class="menu-header-icon-link">
-              <svg class="menu-header-icon-svg" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-header-icon-item">
-            <a href="" class="menu-header-icon-link">
-              <svg class="menu-header-icon-svg" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-header-icon-item">
-            <a href="" class="menu-header-icon-link">
-              <svg class="menu-header-icon-svg" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        
-
+            </button>
+            <nav>
+              <ul class="menu-list list">
+                <li class="menu-item">
+                  <a href="./index.html" class="menu-link link current">Studio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./contacts" class="menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+          <div class="mobile-menu-bottom">
+            <ul class="menu-info-list list">
+              <li class="menu-info-item">
+                <a href="tel:+110001111111" class="menu-info-tel link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="menu-info-item">
+                <a href="mailto:info@devstudio.com" class="menu-info-mail link">info@devstudio.com</a>
+              </li>
+            </ul>
+    
+            <ul class="menu-icon-list list">
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-item">
+                <a href="" class="menu-icon-link">
+                  <svg class="menu-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <!-- ---Hero----->
-    <section class="hero section hero-overlay">
+      <!-----Hero----->
+      <section class="hero section hero-overlay">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn button" data-modal-open>
@@ -225,13 +225,14 @@
       </section> -->
 
       <!-----Team----->
-      <!-- <section class="team section">
+     <!-- <section class="team section">
         <div class="container">
           <h2 class="team-title title">Our team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/foto-team1.jpg 1x, ./images/foto-team1@2x.jpg 2x"
                 src="./images/foto-team1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -276,6 +277,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/foto-team2.jpg 1x, ./images/foto-team2@2x.jpg 2x"
                 src="./images/foto-team2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -319,6 +321,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/foto-team3.jpg 1x, ./images/foto-team3@2x.jpg 2x"
                 src="./images/foto-team3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -362,6 +365,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/foto-team4.jpg 1x, ./images/foto-team4@2x.jpg 2x"
                 src="./images/foto-team4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -526,7 +530,7 @@
     </footer> -->
 
     <!-----Modal----->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-container">
         <button type="button" class="close-btn-modal" data-modal-close>
           <svg class="close-btn-modal-svg" width="8" height="8">
@@ -607,6 +611,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
