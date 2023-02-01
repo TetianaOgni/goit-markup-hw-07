@@ -48,6 +48,10 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 } */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .list {
   padding: 0;
@@ -112,18 +116,7 @@ img {
 }
 
 /* -----Header----- */
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-
-
-/* .mobile-menu-open {
-  display: none;
-} */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .header-list {
     display: none;
   } 
@@ -131,6 +124,15 @@ img {
     display: none;
   }
   
+} */
+
+.header {
+  background-color: var(--contrast-color);
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
+  outline: 1px solid gray;
 }
 
 .header-container {
@@ -139,20 +141,43 @@ img {
   justify-content: space-between;
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  
-  outline: 1px solid gray;
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
-.mobile-menu-open {
-  background-color: transparent;
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.header-logo {
+  display: block;
+  line-height: 1.16;
+  color: var(--dark-color);
+  
+}
+
+.primary {
+  color: var(--primary-brand-color);
+}
+
+
+/* .mobile-menu-open {
+  width: 32px;
+  height: 22px;
   border: none;
   padding: 0;
   line-height: 0;
+  background-color: transparent;
 }
 
+.mobile-menu-open-icon {
+  stroke: var(--dark-color);
+} */
+/*
 .mobile-menu {
   position: fixed;
   width: 100%;
@@ -162,11 +187,81 @@ img {
   left: 0;
   background-color: var(--accent-color);
 }
-
+/*
 .mobile-menu-close-btn {
   position: absolute;
   top: 24px;
-  right: 24px;
+  right: 24px; */
+
+/*
+  .header-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .header-link {
+    position: relative;
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  
+    transition: color var(--transition-dur-and-func);
+  }
+  
+  .header-link.current {
+    color: var(--primary-brand-color);
+  }
+  
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+  }
+  
+  .header-link:hover,
+  .header-link:focus,
+  .header-info:hover,
+  .header-info:focus {
+    color: var(--pressed-state-color);
+  }
+  
+  .header-info-list {
+    display: flex;
+  }
+  
+  .info-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .header-info {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  
+    transition: color var(--transition-dur-and-func);
+  }  */
+  
+
+/* --------------- */
+
 
   /* display: flex;
   justify-content: center;
@@ -180,8 +275,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  cursor: pointer; */
-}
+  cursor: pointer; 
+}*/
 
 /* 
 .header {
@@ -195,7 +290,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+}v
 
 .header-nav {
   display: flex;
@@ -296,10 +391,6 @@ img {
   background-color: var(--dark-color);
 }
 
-.hero-container {
-  
-}
-
 .hero-overlay {
   /* max-width: 1600px; */
   width: 100%;
@@ -310,11 +401,26 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+
+    }
+}
+
 
 .hero-title {
   max-width: 350px; 
@@ -327,6 +433,7 @@ img {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .hero-btn,
@@ -741,7 +848,7 @@ img {
 } */
 
 /* -----Modal----- */
-/* 
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -766,9 +873,9 @@ img {
   top: 50%;
   left: 50%;
 
-  width: 408px;
+  max-width: 392px;
   min-height: 576px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 16px 24px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -940,4 +1047,4 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-} */
+} 

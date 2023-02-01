@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
@@ -5,11 +6,109 @@
 
     outline: 1px solid blue;
   }
+  
 
+   /* -----Header----- */
+ 
+  
+
+  .header-logo {
+    line-height: 1.33;
+    margin-right: 76px;
+
+  }
+   
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .header-link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    padding-top: 24px;
+    padding-bottom: 21px;
     
+  
+    transition: color var(--transition-dur-and-func);
+  }
+  .header-link.current {
+    color: var(--primary-brand-color);
+  }
+  
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+  }
+  
+  .header-link:hover,
+  .header-link:focus,
+  .header-info:hover,
+  .header-info:focus {
+    color: var(--pressed-state-color);
+  }
+
+  
+
+  .header-info {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  
+  
+    transition: color var(--transition-dur-and-func);
+  } 
+
    /* -----Hero----- */
   .hero {
     padding-bottom: 108px;
+  }
+
+  .hero-overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg-tab-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -19,5 +118,9 @@
     margin-bottom: 40px;
   }
   
-
+  .modal-container {
+    max-width: 408px;
+    min-height: 586px;
+    padding: 72px 24px 24px 24px;
+  }
 }
