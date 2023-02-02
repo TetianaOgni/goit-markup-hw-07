@@ -1,32 +1,27 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-
-
-    outline: 1px solid green;
-
-  }  
+  }
 
   /* -----Header----- */
   .header-link {
     padding-bottom: 24px;
   }
   .header-info-list {
-    display: flex;  
+    display: flex;
   }
-    
+
   .info-item:not(:last-child) {
     margin-right: 40px;
   }
-    
+
   .header-info {
     display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-  
-    
+
     transition: color var(--transition-dur-and-func);
   }
 
@@ -37,26 +32,26 @@
   }
 
   .hero-overlay {
-    background-image: linear-gradient(to right,
-       rgba(46, 47, 66, 0.7),
-       rgba(46, 47, 66, 0.7)
-       ),
-    url(../images/hero-bg-deskt-1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-deskt-1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      .hero-overlay {
-        background-image: linear-gradient(
-            to right,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/hero-bg-deskt-2x.jpg);
-    
+    .hero-overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-deskt-2x.jpg);
     }
   }
-    
+
   .hero-title {
     margin-bottom: 48px;
   }
@@ -64,12 +59,12 @@
   /* -----Strategy-----*/
   .strategy {
     padding-top: 120px;
-    padding-bottom: 120px; 
+    padding-bottom: 120px;
   }
-  
+
   .strategy-list {
     gap: 24px;
-  } 
+  }
 
   .strategy-item {
     width: calc((100% - 72px) / 4);
@@ -84,41 +79,41 @@
     background-position: center;
     margin-bottom: 8px;
   }
-  
+
   .icon-strategy::before {
     background-image: url(../images/icon-strategi.svg);
   }
-  
+
   .icon-punctuality::before {
     background-image: url(../images/icon-punctuality.svg);
   }
-  
+
   .icon-diligence::before {
     background-image: url(../images/icon-diligence.svg);
   }
-  
+
   .icon-technologies::before {
     background-image: url(../images/icon-technologies.svg);
   }
-  
+
   .strategy-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
-   .strategy-text {
+  .strategy-text {
     font-weight: 400;
-   }
+  }
 
-   /* -----Result----- */
-   
+  /* -----Result----- */
+
   .result {
     padding-top: 0;
     padding-bottom: 120px;
 
     background-color: var(--contrast-color);
   }
-  
+
   .result-list {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +136,37 @@
     width: calc((100% - 72px) / 4);
   }
 
+  /* -----Customers----- */
 
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-} 
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 5 * 24px) / 6);
+  }
+
+  /*-----Footer----- */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+
+  .footer-container-logo {
+    margin-right: 120px;
+  }
+
+  .footer-container-icon {
+    margin-right: 80px;
+  }
+}

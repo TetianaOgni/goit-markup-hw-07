@@ -1,23 +1,15 @@
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
-
-
-    outline: 1px solid blue;
   }
-  
 
-   /* -----Header----- */
- 
-  
+  /* -----Header----- */
 
   .header-logo {
     line-height: 1.33;
     margin-right: 76px;
-
   }
-   
+
   .mobile-menu-open {
     display: none;
   }
@@ -30,11 +22,11 @@
     display: flex;
     align-items: center;
   }
-  
+
   .header-item:not(:last-child) {
     margin-right: 40px;
   }
-  
+
   .header-link {
     position: relative;
     display: block;
@@ -45,14 +37,14 @@
     color: var(--dark-color);
     padding-top: 24px;
     padding-bottom: 21px;
-    
-  
+
     transition: color var(--transition-dur-and-func);
   }
+
   .header-link.current {
     color: var(--primary-brand-color);
   }
-  
+
   .header-link.current::after {
     content: "";
     position: absolute;
@@ -63,7 +55,7 @@
     left: 0;
     bottom: -1px;
   }
-  
+
   .header-link:hover,
   .header-link:focus,
   .header-info:hover,
@@ -71,43 +63,40 @@
     color: var(--pressed-state-color);
   }
 
-  
-
   .header-info {
     display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-  
-  
-    transition: color var(--transition-dur-and-func);
-  } 
 
-   /* -----Hero----- */
+    transition: color var(--transition-dur-and-func);
+  }
+
+  /* -----Hero----- */
   .hero {
     padding-bottom: 108px;
   }
 
   .hero-overlay {
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-bg-tab-1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero-overlay {
-      background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-tab-2x.jpg);
+      url(../images/hero-bg-tab-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
     }
   }
 
@@ -117,41 +106,42 @@
     line-height: 1.07;
     margin-bottom: 40px;
   }
-  
-  .modal-container {
-    max-width: 408px;
-    min-height: 586px;
-    padding: 72px 24px 24px 24px;
-  }
 
-   /* -----Strategy-----*/
-    
-  .strategy-list,
-  .card-list {
+  /* -----Strategy-----*/
+
+  .strategy-list {
     row-gap: 72px;
     column-gap: 24px;
-  } 
-  
-  .strategy-item {
-    width: calc((100% - 72px) / 2);
   }
+
+  .strategy-item {
+    width: calc((100% - 1 * 72px) / 2);
+  }
+
   .strategy-subtitle {
     text-align: left;
   }
-  
+
   /* -----Team----- */
 
   .team {
     padding-bottom: 128px;
-}
+  }
 
   @media screen and (max-width: 1199px) {
-    .team>.container {
-      padding-left: 93px;
-      padding-right: 93px;
-     }
+    .team > .container,
+    .customers > .container,
+    .footer > .container {
+      padding-left: 107px;
+      padding-right: 107px;
+    }
   }
-  
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .team-list {
     row-gap: 64px;
     column-gap: 24px;
@@ -159,8 +149,44 @@
 
   .team-item {
     width: calc((100% - 64px) / 2);
-   
   }
 
-   
-} 
+  /* -----Customers----- */
+
+  .customers-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  /*-----Footer----- */
+
+  @media screen and (max-width: 1199px) {
+    .footer > .container {
+      padding-left: 107px;
+      padding-right: 107px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 72px;
+      column-gap: 24px;
+    }
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .footer-form-email {
+    min-width: 264px;
+  }
+
+  /* -----Modal----- */
+  .modal-container {
+    max-width: 408px;
+    min-height: 586px;
+    padding: 72px 24px 24px 24px;
+  }
+}
