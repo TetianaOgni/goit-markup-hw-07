@@ -113,7 +113,7 @@ img {
   border-bottom: 1px solid var(--accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  
+
   outline: 1px solid gray;
 }
 
@@ -138,7 +138,7 @@ img {
 .header-logo {
   display: block;
   line-height: 1.16;
-  color: var(--dark-color);  
+  color: var(--dark-color);
 }
 
 .primary {
@@ -172,19 +172,18 @@ img {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .hero-overlay {
-      background-image: linear-gradient(
+  .hero-overlay {
+    background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-mob-2x.jpg);
-    }
+  }
 }
 
-
 .hero-title {
-  max-width: 350px; 
+  max-width: 350px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -219,21 +218,20 @@ img {
   background-color: var(--pressed-state-color);
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} 
+}
 
 /* -----Strategy-----*/
 .strategy {
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--contrast-color);
-} 
+}
 
 .strategy-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
- 
-} 
+}
 
 .strategy-subtitle {
   font-weight: 700;
@@ -243,21 +241,20 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
- .strategy-text {
+.strategy-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
- }
-
+}
 
 /* -----Result----- */
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
   .result {
     display: none;
-  } 
+  }
 }
 
 /* -----Team----- */
@@ -383,7 +380,7 @@ img {
 
 .footer-logo {
   line-height: 1.16;
-  color: var(--light-color); 
+  color: var(--light-color);
 }
 
 .footer-text {
@@ -430,9 +427,7 @@ img {
   background-color: var(--success-color);
 }
 
-
 .footer-form-email {
- 
   height: 40px;
 
   background-color: transparent;
@@ -668,4 +663,4 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-} 
+}

@@ -10,10 +10,7 @@
     margin-right: 76px;
   }
 
-  .mobile-menu-open {
-    display: none;
-  }
-
+  .mobile-menu-open,
   .mobile-menu {
     display: none;
   }
@@ -85,6 +82,7 @@
   }
 
   /* -----Hero----- */
+
   .hero {
     padding-bottom: 108px;
   }
