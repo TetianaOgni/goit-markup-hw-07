@@ -2,9 +2,14 @@
   .container {
     max-width: 426px;
   }
-
   .modal-container {
-    max-width: 392px;
+    width: 392px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 392px) {
+  .modal-container {
+    max-width: 100%;
   }
 }
 
@@ -104,6 +109,9 @@
     color: var(--dark-color);
 
     transition: color var(--transition-dur-and-func);
+  }
+  .menu-link.current {
+    color: var(--primary-brand-color);
   }
 
   .menu-link:hover,
@@ -214,7 +222,15 @@
   }
 
   .footer-form-email {
-    min-width: 396px;
     margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer-form-email {
+    width: 290px;
+  }
+
+  .modal-container {
+    width: 392px;
   }
 }

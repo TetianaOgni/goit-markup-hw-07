@@ -63,14 +63,25 @@
     color: var(--pressed-state-color);
   }
 
+  @media screen and (max-width: 1199px) {
+    .header-info-list {
+      padding-top: 24px;
+      padding-bottom: 10px;
+    }
+  }
+
   .header-info {
     display: block;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
     color: var(--text-color);
 
     transition: color var(--transition-dur-and-func);
+  }
+
+  .header-mail {
+    margin-bottom: 4px;
   }
 
   /* -----Hero----- */
@@ -110,12 +121,14 @@
   /* -----Strategy-----*/
 
   .strategy-list {
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
   }
 
   .strategy-item {
-    width: calc((100% - 1 * 72px) / 2);
+    width: calc((100% - 1 * 24px) / 2);
   }
 
   .strategy-subtitle {
@@ -148,7 +161,7 @@
   }
 
   .team-item {
-    width: calc((100% - 64px) / 2);
+    width: calc((100% - 1 * 24px) / 2);
   }
 
   /* -----Customers----- */
