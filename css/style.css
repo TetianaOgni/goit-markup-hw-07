@@ -381,12 +381,14 @@ img {
 .footer-logo {
   line-height: 1.16;
   color: var(--light-color);
+
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
-  max-width: 264px;
+  width: 264px;
   color: var(--accent-color);
-  margin-top: 16px;
 }
 
 .footer-title {

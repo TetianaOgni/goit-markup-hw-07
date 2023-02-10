@@ -123,11 +123,15 @@
     margin-bottom: 40px;
   }
 
+  .menu-info-list {
+    margin-bottom: 40px;
+  }
+
   .menu-info-tel {
     display: block;
     font-weight: 600;
     font-size: 36px;
-    line-height: 1.11px;
+    line-height: 1.11;
 
     margin-bottom: 40px;
 
@@ -141,15 +145,13 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    margin-bottom: 40px;
-
     color: var(--text-color);
   }
 
   .menu-icon-list {
     display: flex;
     justify-content: space-between;
-    gap: 56px;
+    gap: 4px;
   }
 
   .menu-icon-item {
