@@ -200,4 +200,39 @@
     min-height: 586px;
     padding: 72px 24px 24px 24px;
   }
+
+  /* -----Portfolio----- */
+
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+
+  .filter-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .card-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .card-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+
+  .card-img {
+    width: 356px;
+    height: 280px;
+  }
 }

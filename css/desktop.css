@@ -24,6 +24,7 @@
   }
 
   /* -----Hero----- */
+
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -56,6 +57,7 @@
   }
 
   /* -----Strategy-----*/
+
   .strategy {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -167,5 +169,24 @@
 
   .footer-container-icon {
     margin-right: 80px;
+  }
+
+  /* -----Portfolio----- */
+
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list {
+    margin-bottom: 72px;
+  }
+
+  .card-list {
+    row-gap: 48px;
+  }
+
+  .card-item {
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
